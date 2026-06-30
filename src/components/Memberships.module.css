@@ -1,0 +1,133 @@
+.memberships {
+  background: var(--parchment-dark);
+  padding: 100px 56px;
+}
+
+.membershipsWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionHead {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--bronze);
+  display: block;
+  margin-bottom: 18px;
+}
+
+.sectionHead h2 {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(26px, 4vw, 48px);
+  font-weight: 300;
+  color: var(--mocha);
+  line-height: 1.08;
+  margin-top: 8px;
+}
+
+.tabRow {
+  display: flex;
+  justify-content: center;
+  margin: 44px 0;
+}
+
+.tabs {
+  display: flex;
+  border: 1px solid rgba(71, 52, 44, 0.16);
+  border-radius: 100px;
+  padding: 4px;
+  background: var(--parchment);
+}
+
+.tab {
+  padding: 10px 28px;
+  border-radius: 100px;
+  border: none;
+  background: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--mocha);
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.tab.active {
+  background: var(--mocha);
+  color: var(--parchment);
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.pCard {
+  background: var(--parchment);
+  border: 1px solid rgba(71, 52, 44, 0.1);
+  border-radius: 16px;
+  padding: 32px 28px;
+}
+
+.pLabel {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--bronze);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.pCard h4 {
+  font-family: var(--font-fraunces), serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--mocha);
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+
+.pAmt {
+  font-family: var(--font-fraunces), serif;
+  font-size: 40px;
+  font-weight: 300;
+  color: var(--mocha);
+  line-height: 1;
+}
+
+.pAmt small {
+  font-size: 21px;
+}
+
+.feat {
+  background: var(--mocha);
+  border-color: var(--mocha);
+}
+
+.feat h4,
+.feat .pAmt {
+  color: var(--parchment);
+}
+
+@media (max-width: 960px) {
+  .memberships {
+    padding: 80px 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tabs {
+    flex-wrap: wrap;
+    border-radius: 16px;
+    justify-content: center;
+  }
+}

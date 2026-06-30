@@ -1,0 +1,103 @@
+.timings {
+  padding: 100px 56px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionHead {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--bronze);
+  display: block;
+  margin-bottom: 18px;
+}
+
+.sectionHead h2 {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(26px, 4vw, 48px);
+  font-weight: 300;
+  color: var(--mocha);
+  line-height: 1.08;
+  margin-top: 8px;
+}
+
+.timingsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  margin-top: 56px;
+}
+
+.tCard {
+  border: 1px solid rgba(71, 52, 44, 0.12);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.tHead {
+  background: var(--mocha);
+  padding: 22px 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tHead h3 {
+  font-family: var(--font-fraunces), serif;
+  font-size: 21px;
+  font-weight: 300;
+  color: var(--parchment);
+}
+
+.tBody {
+  padding: 28px 32px;
+}
+
+.tGroup {
+  margin-bottom: 22px;
+}
+
+.tGroup:last-child {
+  margin-bottom: 0;
+}
+
+.tLbl {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--bronze);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.slot {
+  background: var(--parchment-dark);
+  border: 1px solid rgba(71, 52, 44, 0.1);
+  padding: 7px 15px;
+  border-radius: 100px;
+  font-size: 13px;
+  color: var(--mocha);
+}
+
+@media (max-width: 960px) {
+  .timings {
+    padding: 80px 24px;
+  }
+  .timingsGrid {
+    grid-template-columns: 1fr;
+  }
+}

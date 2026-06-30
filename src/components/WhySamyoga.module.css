@@ -1,0 +1,88 @@
+.why {
+  padding: 100px 56px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sectionHead {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+.eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--bronze);
+  display: block;
+  margin-bottom: 18px;
+}
+
+.sectionHead h2 {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(26px, 4vw, 48px);
+  font-weight: 300;
+  color: var(--mocha);
+  line-height: 1.08;
+  margin-top: 8px;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(71, 52, 44, 0.1);
+  border: 1px solid rgba(71, 52, 44, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.whyItem {
+  background: var(--parchment);
+  padding: 38px 32px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: background 0.2s;
+}
+
+.whyItem:hover {
+  background: var(--parchment-dark);
+}
+
+.tick {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--bronze);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tick svg {
+  display: block;
+}
+
+.whyItem span {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--mocha);
+}
+
+@media (max-width: 960px) {
+  .why {
+    padding: 80px 24px;
+  }
+  .whyGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .whyGrid {
+    grid-template-columns: 1fr;
+  }
+}

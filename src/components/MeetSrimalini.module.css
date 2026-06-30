@@ -1,0 +1,126 @@
+.meet {
+  background: var(--mocha);
+  overflow: hidden;
+}
+
+.meetInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  min-height: 600px;
+}
+
+.meetPhoto {
+  overflow: hidden;
+  position: relative;
+}
+
+.meetPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  filter: brightness(0.85) saturate(1.1);
+}
+
+.meetPhoto::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, transparent 70%, var(--mocha) 100%);
+}
+
+.meetText {
+  padding: 84px 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.eyebrow {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--bronze);
+  display: block;
+  margin-bottom: 18px;
+}
+
+.meetText h2 {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(26px, 3vw, 42px);
+  font-weight: 300;
+  line-height: 1.12;
+  color: var(--parchment);
+  margin-bottom: 40px;
+}
+
+.stats {
+  display: flex;
+  gap: 44px;
+  margin-bottom: 44px;
+  flex-wrap: wrap;
+}
+
+.statN {
+  font-family: var(--font-fraunces), serif;
+  font-size: 42px;
+  font-weight: 300;
+  color: var(--bronze);
+  line-height: 1;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.statL {
+  font-size: 12px;
+  color: rgba(245, 243, 237, 0.5);
+  font-weight: 300;
+  letter-spacing: 0.04em;
+}
+
+.meetText p {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.9;
+  color: rgba(245, 243, 237, 0.68);
+  margin-bottom: 30px;
+}
+
+.quote {
+  border-left: 2px solid var(--bronze);
+  padding-left: 22px;
+}
+
+.quote blockquote {
+  font-family: var(--font-fraunces), serif;
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--parchment);
+  line-height: 1.65;
+}
+
+@media (max-width: 960px) {
+  .meetInner {
+    grid-template-columns: 1fr;
+  }
+  .meetPhoto {
+    height: 380px;
+  }
+  .meetPhoto::after {
+    background: linear-gradient(to top, var(--mocha) 0%, transparent 50%);
+  }
+  .meetText {
+    padding: 56px 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .stats {
+    gap: 28px;
+  }
+}

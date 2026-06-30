@@ -1,0 +1,62 @@
+.caya {
+  position: relative;
+  overflow: hidden;
+  padding: 160px 56px;
+  text-align: center;
+}
+
+.cayaBg {
+  position: absolute;
+  inset: 0;
+}
+
+.cayaBg img {
+  width: 100%;
+  height: 130%;
+  object-fit: cover;
+  object-position: center 35%;
+  display: block;
+  filter: brightness(0.22) saturate(0.8) sepia(0.3);
+  will-change: transform;
+}
+
+.cayaInner {
+  position: relative;
+  z-index: 2;
+}
+
+.caya h2 {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(40px, 7vw, 84px);
+  font-weight: 300;
+  line-height: 1.04;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.caya h2 em {
+  font-style: italic;
+  color: var(--bronze);
+}
+
+.cayaLines p {
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 300;
+  line-height: 2.1;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.cayaPunch p {
+  font-family: var(--font-fraunces), serif;
+  font-size: clamp(18px, 2.5vw, 26px);
+  font-style: italic;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.9);
+  margin-top: 4px;
+}
+
+@media (max-width: 960px) {
+  .caya {
+    padding: 100px 24px;
+  }
+}
