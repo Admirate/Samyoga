@@ -10,7 +10,7 @@
 }
 
 .eyebrow {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.24em;
   text-transform: uppercase;
@@ -21,7 +21,7 @@
 
 .sectionHead h2 {
   font-family: var(--font-fraunces), serif;
-  font-size: clamp(26px, 4vw, 48px);
+  font-size: clamp(31px, 4.8vw, 57px);
   font-weight: 300;
   color: var(--mocha);
   line-height: 1.08;
@@ -67,7 +67,7 @@
 }
 
 .whyItem span {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   color: var(--mocha);
 }

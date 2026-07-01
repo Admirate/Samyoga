@@ -13,7 +13,7 @@
 }
 
 .eyebrow {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.24em;
   text-transform: uppercase;
@@ -24,21 +24,21 @@
 
 .visit h2 {
   font-family: var(--font-fraunces), serif;
-  font-size: clamp(26px, 3.5vw, 44px);
+  font-size: clamp(31px, 4.2vw, 52px);
   font-weight: 300;
   color: var(--parchment);
   margin-bottom: 20px;
 }
 
 .visitAddr p {
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 300;
   line-height: 1.95;
   color: rgba(245, 243, 237, 0.6);
 }
 
 .visitPhone {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
   color: var(--parchment);
   display: block;
@@ -46,7 +46,7 @@
 }
 
 .visitPhoneSub {
-  font-size: 12px;
+  font-size: 14px;
   letter-spacing: 0.06em;
   color: rgba(245, 243, 237, 0.38);
   font-weight: 300;
@@ -68,7 +68,7 @@
   color: var(--parchment);
   padding: 13px 24px;
   border-radius: 100px;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 500;
   text-decoration: none;
   border: 1px solid rgba(245, 243, 237, 0.16);
@@ -87,7 +87,7 @@
   color: var(--mocha);
   padding: 13px 24px;
   border-radius: 100px;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 700;
   text-decoration: none;
   transition: opacity 0.2s;

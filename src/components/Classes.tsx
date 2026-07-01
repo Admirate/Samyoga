@@ -3,7 +3,6 @@ import styles from "./Classes.module.css";
 
 const CLASSES = [
   {
-    tag: "Yoga",
     title: "Yoga",
     description:
       "Build strength, flexibility, balance and awareness through a consistent practice designed for every stage of your journey.",
@@ -11,7 +10,6 @@ const CLASSES = [
       "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=800&q=85&fit=crop&crop=center",
   },
   {
-    tag: "Pilates",
     title: "Pilates",
     description:
       "Improve posture, core strength and body control through structured, low-impact movement.",
@@ -19,7 +17,6 @@ const CLASSES = [
       "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=85&fit=crop&crop=center",
   },
   {
-    tag: "Yoga + Pilates",
     title: "Yoga + Pilates",
     description:
       "A balanced approach combining mindful movement with functional strength for complete well-being.",
@@ -44,7 +41,6 @@ export default function Classes() {
                 <img src={c.image} alt={c.title} />
               </div>
               <div className={styles.classBody}>
-                <span className={styles.classTag}>{c.tag}</span>
                 <h3>{c.title}</h3>
                 <p>{c.description}</p>
               </div>

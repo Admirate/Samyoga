@@ -12,12 +12,11 @@
 
 .cayaBg img {
   width: 100%;
-  height: 130%;
+  height: 100%;
   object-fit: cover;
   object-position: center 35%;
   display: block;
   filter: brightness(0.22) saturate(0.8) sepia(0.3);
-  will-change: transform;
 }
 
 .cayaInner {
@@ -27,7 +26,7 @@
 
 .caya h2 {
   font-family: var(--font-fraunces), serif;
-  font-size: clamp(40px, 7vw, 84px);
+  font-size: clamp(48px, 8.2vw, 100px);
   font-weight: 300;
   line-height: 1.04;
   color: #fff;
@@ -40,7 +39,7 @@
 }
 
 .cayaLines p {
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(19px, 2.4vw, 24px);
   font-weight: 300;
   line-height: 2.1;
   color: rgba(255, 255, 255, 0.72);
@@ -48,7 +47,7 @@
 
 .cayaPunch p {
   font-family: var(--font-fraunces), serif;
-  font-size: clamp(18px, 2.5vw, 26px);
+  font-size: clamp(22px, 3vw, 31px);
   font-style: italic;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.9);

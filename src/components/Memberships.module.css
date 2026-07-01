@@ -14,7 +14,7 @@
 }
 
 .eyebrow {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.24em;
   text-transform: uppercase;
@@ -25,7 +25,7 @@
 
 .sectionHead h2 {
   font-family: var(--font-fraunces), serif;
-  font-size: clamp(26px, 4vw, 48px);
+  font-size: clamp(31px, 4.8vw, 57px);
   font-weight: 300;
   color: var(--mocha);
   line-height: 1.08;
@@ -51,7 +51,7 @@
   border-radius: 100px;
   border: none;
   background: none;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 500;
   color: var(--mocha);
   cursor: pointer;
@@ -78,7 +78,7 @@
 }
 
 .pLabel {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -89,7 +89,7 @@
 
 .pCard h4 {
   font-family: var(--font-fraunces), serif;
-  font-size: 18px;
+  font-size: 21px;
   font-weight: 300;
   color: var(--mocha);
   margin-bottom: 20px;
@@ -98,14 +98,14 @@
 
 .pAmt {
   font-family: var(--font-fraunces), serif;
-  font-size: 40px;
+  font-size: 48px;
   font-weight: 300;
   color: var(--mocha);
   line-height: 1;
 }
 
 .pAmt small {
-  font-size: 21px;
+  font-size: 25px;
 }
 
 .feat {
