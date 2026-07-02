@@ -1,3 +1,4 @@
+import Image from "next/image";
 import FadeIn from "./FadeIn";
 import styles from "./ComeAsYouAre.module.css";
 
@@ -5,10 +6,17 @@ export default function ComeAsYouAre() {
   return (
     <section className={styles.caya}>
       <div className={styles.cayaBg}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=1800&q=85&fit=crop&crop=center"
+        <Image
+          src="/come as you are.png"
           alt=""
+          fill
+          priority
+          quality={90}
+          style={{
+            objectFit: "cover",
+            objectPosition: "center 35%",
+            filter: "brightness(0.22) saturate(0.8) sepia(0.3)",
+          }}
         />
       </div>
       <div className={styles.cayaInner}>

@@ -12,17 +12,16 @@ const REASONS = [
 
 function Tick() {
   return (
-    <div className={styles.tick}>
-      <svg width="11" height="11" viewBox="0 0 12 12" fill="none">
-        <polyline
-          points="2,6 5,9 10,3"
-          stroke="#F5F3ED"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-      </svg>
-    </div>
+    <svg
+      className={styles.tick}
+      width="22"
+      height="22"
+      viewBox="0 0 22 22"
+      fill="none"
+      aria-hidden="true"
+    >
+      <circle cx="11" cy="11" r="10" stroke="#5A8A6A" strokeWidth="1.5" />
+    </svg>
   );
 }
 

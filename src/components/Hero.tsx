@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -19,10 +20,13 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.heroBg}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1920&q=85&fit=crop&crop=center"
-          alt="Yoga at sunrise"
+        <Image
+          src="/samyoga hero.png"
+          alt="Samyoga Studio"
+          fill
+          priority
+          quality={90}
+          style={{ objectFit: "cover", objectPosition: "center 40%" }}
         />
       </div>
       <div ref={contentRef} className={styles.heroContent}>

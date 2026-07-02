@@ -1,3 +1,4 @@
+import Image from "next/image";
 import FadeIn from "./FadeIn";
 import styles from "./MeetSrimalini.module.css";
 
@@ -6,10 +7,12 @@ export default function MeetSrimalini() {
     <section className={styles.meet} id="srimalini">
       <div className={styles.meetInner}>
         <div className={styles.meetPhoto}>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/images/samyoga.jpg"
+          <Image
+            src="/yoga is a way of life.png"
             alt="Srimalini — Yoga Teacher"
+            fill
+            quality={90}
+            style={{ objectFit: "cover", objectPosition: "center top", filter: "brightness(0.85) saturate(1.1)" }}
           />
         </div>
         <div className={styles.meetText}>

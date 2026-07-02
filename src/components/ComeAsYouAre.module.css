@@ -10,14 +10,6 @@
   inset: 0;
 }
 
-.cayaBg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 35%;
-  display: block;
-  filter: brightness(0.22) saturate(0.8) sepia(0.3);
-}
 
 .cayaInner {
   position: relative;

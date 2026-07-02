@@ -1,3 +1,4 @@
+import Image from "next/image";
 import FadeIn from "./FadeIn";
 import styles from "./Classes.module.css";
 
@@ -6,15 +7,13 @@ const CLASSES = [
     title: "Yoga",
     description:
       "Build strength, flexibility, balance and awareness through a consistent practice designed for every stage of your journey.",
-    image:
-      "https://images.unsplash.com/photo-1575052814086-f385e2e2ad1b?w=800&q=85&fit=crop&crop=center",
+    image: "/Rectangle.png",
   },
   {
     title: "Pilates",
     description:
       "Improve posture, core strength and body control through structured, low-impact movement.",
-    image:
-      "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&q=85&fit=crop&crop=center",
+    image: "/pilates.png",
   },
   {
     title: "Yoga + Pilates",
@@ -37,8 +36,18 @@ export default function Classes() {
           {CLASSES.map((c, i) => (
             <FadeIn key={c.title} delay={(i + 1) as 1 | 2 | 3} className={styles.classCard}>
               <div className={styles.classImg}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={c.image} alt={c.title} />
+                <Image
+                  src={c.image}
+                  alt={c.title}
+                  fill
+                  quality={90}
+                  style={{
+                    objectFit: "cover",
+                    objectPosition: "center",
+                    filter: "brightness(0.8) saturate(1.05)",
+                    transition: "transform 0.7s ease",
+                  }}
+                />
               </div>
               <div className={styles.classBody}>
                 <h3>{c.title}</h3>
