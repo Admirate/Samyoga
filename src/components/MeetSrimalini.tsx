@@ -8,11 +8,11 @@ export default function MeetSrimalini() {
       <div className={styles.meetInner}>
         <div className={styles.meetPhoto}>
           <Image
-            src="/yoga-is-a-way-of-life.png"
+            src="/owner image.png"
             alt="Srimalini — Yoga Teacher"
             fill
             quality={90}
-            style={{ objectFit: "cover", objectPosition: "center top", filter: "brightness(0.85) saturate(1.1)" }}
+            style={{ objectFit: "cover", objectPosition: "center top" }}
           />
         </div>
         <div className={styles.meetText}>

@@ -17,12 +17,6 @@
 }
 
 
-.meetPhoto::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to right, transparent 70%, var(--mocha) 100%);
-}
 
 .meetText {
   padding: 84px 64px;
@@ -102,9 +96,6 @@
   }
   .meetPhoto {
     height: 380px;
-  }
-  .meetPhoto::after {
-    background: linear-gradient(to top, var(--mocha) 0%, transparent 50%);
   }
   .meetText {
     padding: 56px 32px;
