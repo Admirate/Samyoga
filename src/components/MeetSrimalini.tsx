@@ -8,7 +8,7 @@ export default function MeetSrimalini() {
       <div className={styles.meetInner}>
         <div className={styles.meetPhoto}>
           <Image
-            src="/yoga is a way of life.png"
+            src="/yoga-is-a-way-of-life.png"
             alt="Srimalini — Yoga Teacher"
             fill
             quality={90}

@@ -35,7 +35,7 @@ export default function Footer() {
       </div>
       <div className={styles.footBottom}>
         <p className={styles.footCopy}>
-          © 2025 Samyoga Studio. Yoga &amp; Pilates, Hyderabad.
+          © 2026 Samyoga Studio. Yoga &amp; Pilates, Hyderabad.
         </p>
         <p className={styles.footCopy}>
           Designed by{" "}

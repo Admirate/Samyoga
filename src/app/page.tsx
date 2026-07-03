@@ -15,16 +15,18 @@ export default function Home() {
   return (
     <>
       <Nav />
-      <Hero />
-      <About />
-      <MeetSrimalini />
-      <WhySamyoga />
-      <Classes />
-      <Timings />
-      <Memberships />
-      <ComeAsYouAre />
-      <Visit />
-      <FinalCTA />
+      <main id="main-content">
+        <Hero />
+        <About />
+        <MeetSrimalini />
+        <WhySamyoga />
+        <Classes />
+        <Timings />
+        <Memberships />
+        <ComeAsYouAre />
+        <Visit />
+        <FinalCTA />
+      </main>
       <Footer />
     </>
   );

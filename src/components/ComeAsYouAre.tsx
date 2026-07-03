@@ -7,8 +7,9 @@ export default function ComeAsYouAre() {
     <section className={styles.caya}>
       <div className={styles.cayaBg}>
         <Image
-          src="/come as you are.png"
+          src="/come-as-you-are.png"
           alt=""
+          aria-hidden="true"
           fill
           priority
           quality={90}

@@ -21,7 +21,7 @@ export default function Hero() {
     <section className={styles.hero}>
       <div className={styles.heroBg}>
         <Image
-          src="/samyoga hero.png"
+          src="/samyoga-hero.png"
           alt="Samyoga Studio"
           fill
           priority
