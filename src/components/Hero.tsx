@@ -37,10 +37,10 @@ export default function Hero() {
           Yoga for <em>Everyday Life.</em>
         </h1>
         <p className={`${styles.heroSub} ${styles.fadeIn} ${styles.d2}`}>
-          Not a workout. Not a quick fix.
+          Beyond movement. Beyond poses.
         </p>
         <p className={`${styles.heroSub} ${styles.fadeIn} ${styles.d2}`}>
-          A mindful practice that stays with you—on and off the mat.
+          A practice that stays with you on and off the mat.
         </p>
         <p className={`${styles.heroTagline} ${styles.fadeIn} ${styles.d3}`}>
           Come As You Are.
