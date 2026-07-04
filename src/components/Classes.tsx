@@ -13,7 +13,7 @@ const CLASSES = [
     title: "Pilates",
     description:
       "Improve posture, core strength and body control through structured, low-impact movement.",
-    image: "/Pilates.png",
+    image: "/Pilates.jpeg",
   },
   {
     title: "Yoga + Pilates",

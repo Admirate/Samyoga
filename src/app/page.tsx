@@ -10,6 +10,7 @@ import ComeAsYouAre from "@/components/ComeAsYouAre";
 import Visit from "@/components/Visit";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import FloatingContacts from "@/components/FloatingContacts";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <FinalCTA />
       </main>
       <Footer />
+      <FloatingContacts />
     </>
   );
 }

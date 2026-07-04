@@ -1,0 +1,50 @@
+.floatBtn {
+  position: fixed;
+  bottom: 28px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.floatBtn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp {
+  left: 28px;
+  background: #25d366;
+  color: #fff;
+}
+
+.maps {
+  right: 28px;
+  background: var(--bronze);
+  color: var(--mocha);
+}
+
+@media (max-width: 600px) {
+  .floatBtn {
+    width: 48px;
+    height: 48px;
+    bottom: 84px;
+  }
+  .whatsapp {
+    left: 16px;
+  }
+  .maps {
+    right: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floatBtn {
+    transition: none;
+  }
+}
