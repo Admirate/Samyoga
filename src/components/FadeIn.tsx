@@ -8,6 +8,7 @@ type FadeInProps = {
   delay?: 0 | 1 | 2 | 3 | 4;
   as?: "div" | "span" | "p";
   className?: string;
+  id?: string;
 };
 
 export default function FadeIn({
@@ -15,6 +16,7 @@ export default function FadeIn({
   delay = 0,
   as = "div",
   className = "",
+  id,
 }: FadeInProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -44,6 +46,7 @@ export default function FadeIn({
   return (
     <Component
       ref={ref as never}
+      id={id}
       className={`${styles.fade} ${visible ? styles.in : ""} ${delayClass} ${className}`}
     >
       {children}

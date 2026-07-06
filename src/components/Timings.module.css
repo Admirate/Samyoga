@@ -2,6 +2,7 @@
   padding: 100px 56px;
   max-width: 1200px;
   margin: 0 auto;
+  scroll-margin-top: 100px;
 }
 
 .sectionHead {
@@ -39,6 +40,7 @@
   border: 1px solid rgba(71, 52, 44, 0.12);
   border-radius: 18px;
   overflow: hidden;
+  scroll-margin-top: 100px;
 }
 
 .tHead {

@@ -44,7 +44,12 @@ export default function Timings() {
       </FadeIn>
       <div className={styles.timingsGrid}>
         {TIMINGS.map((t, i) => (
-          <FadeIn key={t.title} delay={(i + 1) as 1 | 2} className={styles.tCard}>
+          <FadeIn
+            key={t.title}
+            delay={(i + 1) as 1 | 2}
+            className={styles.tCard}
+            id={`timings-${t.title.toLowerCase()}`}
+          >
             <div className={styles.tHead}>
               <ClockIcon />
               <h3>{t.title}</h3>

@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import FadeIn from "./FadeIn";
 import styles from "./Memberships.module.css";
 
-type TabId = "yoga" | "pilates" | "combo";
+export type MembershipTab = "yoga" | "pilates" | "combo";
+type TabId = MembershipTab;
 
 const TABS: { id: TabId; label: string }[] = [
   { id: "yoga", label: "Yoga" },
@@ -59,6 +60,17 @@ const PRICING: Record<
 
 export default function Memberships() {
   const [active, setActive] = useState<TabId>("yoga");
+
+  useEffect(() => {
+    const handleSelectTab = (e: Event) => {
+      const tab = (e as CustomEvent<MembershipTab>).detail;
+      if (tab === "yoga" || tab === "pilates" || tab === "combo") {
+        setActive(tab);
+      }
+    };
+    window.addEventListener("samyoga:membership-tab", handleSelectTab);
+    return () => window.removeEventListener("samyoga:membership-tab", handleSelectTab);
+  }, []);
 
   return (
     <section className={styles.memberships} id="memberships">

@@ -1,6 +1,7 @@
 .memberships {
   background: var(--parchment-dark);
   padding: 100px 56px;
+  scroll-margin-top: 100px;
 }
 
 .membershipsWrap {
