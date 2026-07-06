@@ -58,7 +58,7 @@ export default function Visit() {
               WhatsApp
             </a>
             <a
-              href="https://maps.google.com/?q=Himayatnagar+Hyderabad"
+              href="https://maps.app.goo.gl/XPgkrg7eEAwEiPRaA?g_st=ic"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.btnRim}
