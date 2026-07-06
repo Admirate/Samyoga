@@ -75,21 +75,33 @@ export default function Classes() {
                     }}
                   />
                 </div>
-                <button
-                  type="button"
-                  className={styles.priceBtn}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    window.dispatchEvent(
-                      new CustomEvent<MembershipTab>("samyoga:membership-tab", {
-                        detail: c.membershipTab,
-                      })
-                    );
-                    scrollToId("memberships");
-                  }}
-                >
-                  See Pricing
-                </button>
+                <div className={styles.cardBtns}>
+                  <button
+                    type="button"
+                    className={styles.priceBtn}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      scrollToId(c.timingsId);
+                    }}
+                  >
+                    See Timings
+                  </button>
+                  <button
+                    type="button"
+                    className={styles.priceBtn}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      window.dispatchEvent(
+                        new CustomEvent<MembershipTab>("samyoga:membership-tab", {
+                          detail: c.membershipTab,
+                        })
+                      );
+                      scrollToId("memberships");
+                    }}
+                  >
+                    See Pricing
+                  </button>
+                </div>
                 <div className={styles.classBody}>
                   <h3>{c.title}</h3>
                   <p>{c.description}</p>

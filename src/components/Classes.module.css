@@ -66,11 +66,16 @@
   transform: scale(1.05);
 }
 
-.priceBtn {
+.cardBtns {
   position: absolute;
   top: 24px;
   right: 24px;
   z-index: 3;
+  display: flex;
+  gap: 10px;
+}
+
+.priceBtn {
   background: var(--bronze);
   color: var(--graphite);
   border: none;
@@ -94,7 +99,7 @@
 }
 
 .classCardInner:hover .priceBtn,
-.classCardInner:focus-visible .priceBtn,
+.classCardInner:focus-within .priceBtn,
 .priceBtn:focus-visible {
   opacity: 1;
   transform: translateY(0);

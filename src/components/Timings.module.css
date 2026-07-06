@@ -58,6 +58,24 @@
   color: var(--parchment);
 }
 
+.priceBtn {
+  margin-left: auto;
+  background: var(--bronze);
+  color: var(--graphite);
+  border: none;
+  padding: 9px 18px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.priceBtn:hover {
+  background: #c99640;
+}
+
 .tBody {
   padding: 28px 32px;
 }
