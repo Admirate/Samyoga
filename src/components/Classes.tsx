@@ -10,7 +10,7 @@ const CLASSES = [
     title: "Yoga",
     description:
       "Build strength, flexibility, balance and awareness through a consistent practice designed for every stage of your journey.",
-    image: "/Rectangle.png",
+    image: "/new%20imagea/yoga.png",
     timingsId: "timings-yoga",
     membershipTab: "yoga" as MembershipTab,
   },
@@ -18,7 +18,7 @@ const CLASSES = [
     title: "Pilates",
     description:
       "Improve posture, core strength and body control through structured, low-impact movement.",
-    image: "/Pilates.jpeg",
+    image: "/new%20imagea/Pilates.jpg",
     timingsId: "timings-pilates",
     membershipTab: "pilates" as MembershipTab,
   },
@@ -26,8 +26,7 @@ const CLASSES = [
     title: "Yoga + Pilates",
     description:
       "A balanced approach combining mindful movement with functional strength for complete well-being.",
-    image:
-      "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800&q=85&fit=crop&crop=center",
+    image: "/new%20imagea/Yoga+%20pilates.png",
     timingsId: "timings",
     membershipTab: "combo" as MembershipTab,
   },
